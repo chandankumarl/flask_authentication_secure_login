@@ -123,3 +123,11 @@ div p {
     }
 }
 
+.login-google{
+    color: #fff;
+    background-color: coral;
+    &:hover{
+        background-color: rgba(222,105,65);
+    }
+}
+

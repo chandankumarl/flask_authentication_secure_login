@@ -16,12 +16,15 @@
                 placeholder="Name" 
                 class="btn btn-login" 
                 value="Submit"
+                required
                 onclick="setActionForm('login')">
         <input  type="button" 
                 placeholder="Name" 
                 class="btn btn-register" 
                 value="Register"
                 onclick="setActionForm('register')">
+        <input type="button" class="btn login-google" value="Login with Google" onclick="window.location.href='/login/google'">
+
     </form>
     {% if error %}
     <div style="color: red; font-weight:bold;">
