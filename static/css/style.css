@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --secondary-color: #28a745;
+    --secondary-hover-color: #218838;
+    --background-color:wheat;
+    --container-bg-color:#ffffff;
+    --text-color:#333;
+    --subtext-color:#666;
+
+  }
+
+body {
+    background-color:var(--background-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: var(--font-size);
+    color: var(--text-color);
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+
+header{
+    width: 100%;
+    background-color: var(--container-bg-color);
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    color:var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    color:var(--subtext-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    width: 100%;
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+
+div p {
+    font-size: 18px;
+    color: var(--subtext-color);
+    margin-bottom: 20px;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+
+    &:focus{
+        border-color: var(--primary-color);
+        outline: none;
+    }
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border:none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--background-color)0.3s ease;
+}
+
+.btn-login{
+    background-color: var(--primary-color);
+    color: #fff;
+    &:hover{
+        background-color: var(--primary-hover-color);
+    }
+
+}
+
+.btn-register{
+    background-color: var(--secondary-color);
+    color: #fff;
+    &:hover{
+        background-color: var(--secondary-hover-color);
+    }
+}
+
+.btn-logout{
+    background-color: var(--primary-color);
+    &:hover{
+        background-color: var(--primary-hover-color);
+    }
+}
+
